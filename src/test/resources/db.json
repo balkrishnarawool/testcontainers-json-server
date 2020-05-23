@@ -1,0 +1,30 @@
+{
+  "forecast24hours": {
+    "forecast" : [
+      {"offset" : 1, "temperature" :  28},
+      {"offset" : 2, "temperature" :  29},
+      {"offset" : 3, "temperature" :  29},
+      {"offset" : 4, "temperature" :  30},
+      {"offset" : 5, "temperature" :  30},
+      {"offset" : 6, "temperature" :  31},
+      {"offset" : 7, "temperature" :  32},
+      {"offset" : 8, "temperature" :  32},
+      {"offset" : 9, "temperature" :  32},
+      {"offset" : 10, "temperature" :  31},
+      {"offset" : 11, "temperature" :  30},
+      {"offset" : 12, "temperature" :  30},
+      {"offset" : 13, "temperature" :  29},
+      {"offset" : 14, "temperature" :  28},
+      {"offset" : 15, "temperature" :  27},
+      {"offset" : 16, "temperature" :  27},
+      {"offset" : 17, "temperature" :  26},
+      {"offset" : 18, "temperature" :  26},
+      {"offset" : 19, "temperature" :  26},
+      {"offset" : 20, "temperature" :  26},
+      {"offset" : 21, "temperature" :  25},
+      {"offset" : 22, "temperature" :  26},
+      {"offset" : 23, "temperature" :  27},
+      {"offset" : 24, "temperature" :  27}
+    ]
+  }
+}
