@@ -48,7 +48,7 @@ public class WeatherStatsServiceIntegrationTest {
     private WeatherStatsService weatherStatsService;
 
     @Test
-    public void shouldGetStubbedWeatherData() throws Exception {
+    public void shouldGetMockedWeatherData() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
 
         WeatherStatsService.WeatherStats weatherStats = weatherStatsService.getWeatherStats();
