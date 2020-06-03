@@ -37,7 +37,7 @@ public class WeatherStatsServiceIntegrationTest {
     }
 
     @DynamicPropertySource
-    public static void setPostManagerApiConfig(DynamicPropertyRegistry registry) {
+    public static void setWeatherServiceApiConfig(DynamicPropertyRegistry registry) {
         jsonServer.start();
 
         registry.add("weatherservice.host", jsonServer::getContainerIpAddress);
@@ -49,9 +49,7 @@ public class WeatherStatsServiceIntegrationTest {
 
     @Test
     public void shouldGetMockedWeatherData() throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-
-        WeatherStatsService.WeatherStats weatherStats = weatherStatsService.getWeatherStats();
+        final WeatherStatsService.WeatherStats weatherStats = weatherStatsService.getWeatherStats();
 
         assertEquals(32, weatherStats.getMax());
         assertEquals(25, weatherStats.getMin());

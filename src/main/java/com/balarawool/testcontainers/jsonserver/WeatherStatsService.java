@@ -22,9 +22,9 @@ public class WeatherStatsService {
     public WeatherStats getWeatherStats() {
         final String url = "http://" + host + ":" + port + "/forecast24hours";
 
-        DayForecast dayForecast = restTemplate.getForEntity(url, DayForecast.class).getBody();
-        final int max = dayForecast.getForecast().stream().map(hf -> hf.getTemperature()).max(Integer::compare).get();
-        final int min = dayForecast.getForecast().stream().map(hf -> hf.getTemperature()).min(Integer::compare).get();
+        final DayForecast dayForecast = restTemplate.getForEntity(url, DayForecast.class).getBody();
+        final int max = dayForecast.getForecast().stream().map(HourForecast::getTemperature).max(Integer::compare).get();
+        final int min = dayForecast.getForecast().stream().map(HourForecast::getTemperature).min(Integer::compare).get();
 
         return new WeatherStats(max, min);
     }
